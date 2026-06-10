@@ -2,29 +2,26 @@ manifestVersion: 1
 id: splunk-es-apps
 name: Splunk Enterprise
 tagline: Replace this tagline with your app's tagline
-icon: https://svgur.com/i/mvA.svg
+icon: https://assets.portal.heretto.com/splunk/25-02-28/logo_splunk-corporate_rgb-k.svg
 category: Development
-version: "1.0.0"
+version: "10.4.0"
 port: 8100
 description: >-
-  Add your app's description here.
+  AGain operational intelligence by collecting, indexing, and visualizing data using a powerful on-premises engine for actionable insights.
 
 
-  You can also add newlines!
-
-developer: Umbrel
-website: https://umbrel.com
-submitter: Umbrel
+  Splunk Enterprise is a software product that enables you to search, analyze, and visualize the data gathered from the components of your IT infrastructure or business. Splunk Enterprise takes in data from websites, applications, sensors, devices, and so on. After you define the data source, Splunk Enterprise indexes the data stream and parses it into a series of individual events that you can view and search.
+developer: Splunk
+website: https://www.splunk.com/en_us/products/splunk-enterprise.html
+submitter: naristo
 submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
+repo: https://github.com/naristo/splunk-es
 support: https://github.com/getumbrel/umbrel-hello-world-app/issues
 gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
+
 releaseNotes: >-
-  Add what's new in the latest version of your app here.
+  https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4
 dependencies: []
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "admin"
+defaultPassword: "YourSecurePassword123!"
