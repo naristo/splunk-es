@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+
+  app_proxy:
+    environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: splunk-es-apps_server_1
+      APP_PORT: 8000
+    
+  server:
+    image: splunk/splunk:latest
+    environment:
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_GENERAL_TERMS=--accept-sgt-current-at-splunk-com
+      - SPLUNK_PASSWORD=YourSecurePassword123!
+    volumes:
+      - ./etc:/opt/splunk/etc
+      - ./var:/opt/splunk/var
