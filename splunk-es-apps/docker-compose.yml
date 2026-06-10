@@ -14,6 +14,9 @@ services:
       - SPLUNK_START_ARGS=--accept-license
       - SPLUNK_GENERAL_TERMS=--accept-sgt-current-at-splunk-com
       - SPLUNK_PASSWORD=YourSecurePassword123!
+    ports:
+      - 8000
+      - 8089
     volumes:
-      - ./etc:/opt/splunk/etc
-      - ./var:/opt/splunk/var
+      - ${APP_DATA_DIR}/etc:/opt/splunk/etc:rw
+      - ${APP_DATA_DIR}/var:/opt/splunk/var:rw
